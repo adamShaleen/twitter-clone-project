@@ -114,6 +114,7 @@ body {
 
 		#tweet-content {
 			padding-top: 0;
+
 		}
 
 	/* Compose Tweet */
@@ -129,6 +130,7 @@ body {
 	}
 		#tweet-controls {
 			text-align: right;
+			display: none;
 		}
 			#tweet-controls div {
 				display: inline-block;
@@ -166,12 +168,19 @@ body {
 		padding-left: 42px;
 	}
 
-	.tweet-actions {
-		text-align: right;
-	}
+		.tweet-actions {
+			text-align: right;
+			visibility: hidden;
+		}
+
 		.tweet-actions ul {
 			list-style-type: none;
 		}
+
+         /*.tweet:hover .tweet-actions{
+			 display: block;
+		 }*/
+
 			.tweet-actions li {
 				display: inline-block;
 				font-size: 12px;
@@ -189,28 +198,36 @@ body {
 		vertical-align: text-top;
 		background-repeat: no-repeat;
 		background-image: url(https://abs.twimg.com/a/1379560497/t1/img/twitter_web_sprite_icons.png);
+
 	}
 
 	.action-reply {
 		background-position: 0 -190px;
+
+
 	}
 	.action-retweet {
 		background-position: -20px -190px;
 		width: 14px;
 		height: 13px;
+
+
 	}
 	.action-favorite {
 		background-position: -40px -190px;
 		width: 10px;
+
 	}
 	.action-more {
 		background-position: -280px -190px;
 		width: 15px;
+
 	}
 
 	.stats {
 		margin: 12px 0 12px 42px;
 		border-top: 1px solid #e8e8e8;
+		display: none;
 	}
 		.stats, .stats div {
 			box-sizing: border-box;
@@ -258,5 +275,3 @@ body {
 				top: 0;
 				left: 0;
 			}
-
-

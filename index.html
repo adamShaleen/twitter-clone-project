@@ -12,24 +12,32 @@
 				<div id="profile-summary">
 					<div class="content">
 						<img class='avatar' src='img/alagoon.jpg' />
-						<p>Your Name Here!</p>
+						<p>Chotch McGee</p>
 					</div>
 				</div>
 				<div id="tweet-content">
 
-					<!-- STEP 2: When the user clicks on the textarea, the textarea should double in size and the character count and Tweet buttons should be revealed. -->
+					<!-- STEP 2: When the user clicks on the textarea, the
+					textarea should double in size and the character count and
+					Tweet buttons should be revealed. -->
 					<!-- HINT: jQuery ".on" eventHandler -->
 					<textarea class="tweet-compose" placeholder="Compose new Tweet..."/></textarea>
 
-					<!-- STEP 1: Initially, the Tweet button and the character count button below should be hidden. -->
+					<!-- STEP 1: Initially, the Tweet button and the character
+					count button below should be hidden. -->
 					<!-- HINT: Use CSS -->
 					<div id="tweet-controls">
 
-						<!-- STEP 3: As the user types the character count should decrease. Once it hits 10 character or less the count should turn red -->
-						<!-- HINT: jQuery keypress events (keypress, keydown, keyup, etc) -->
+						<!-- STEP 3: As the user types the character count should
+						decrease. Once it hits 10 character or less the count should
+						turn red -->
+						<!-- HINT: jQuery keypress events (keypress, keydown, keyup,
+						etc) -->
 						<div id="char-count">140</div>
 
-						<!-- STEP 4: If the user puts in more than 140 characters, the tweet button should be disabled (and re-enabled when there are <= 140 chars) -->
+						<!-- STEP 4: If the user puts in more than 140 characters,
+						the tweet button should be disabled (and re-enabled when
+						there are <= 140 chars) -->
 						<!-- HINT: javascript length method -->
 						<button class="button" id="tweet-submit">Tweet</button>
 					</div>
@@ -39,19 +47,25 @@
 				<h2>Tweets</h2>
 				<div id="stream">
 
-					<!-- STEP 5: When the user successfully inputs characters and clicks the “Tweet” button, a new tweet should be created and added to the tweet stream in the main column, using the user’s fake profile image in the top left and username/fullname. -->
+					<!-- STEP 5: When the user successfully inputs characters and
+					clicks the “Tweet” button, a new tweet should be created and
+					added to the tweet stream in the main column, using the user’s
+					fake profile image in the top left and username/fullname. -->
 					<!-- HINT: jQuery ".prepend" method -->
 					<div class="tweet">
 						<div class="content">
 							<img class="avatar" src="img/damenleeturks.jpg" />
-							<strong class="fullname">My BFF</strong>
+							<strong class="fullname">Single White Male</strong>
 							<span class="username">@mybff</span>
 
-							<!-- BLACK DIAMOND: Implement the icons for when a tweet is favorited/retweeted in the upper right of the tweet. -->
-							<!-- HINT: Add to what you created in Step 5 -->
-							<p class="tweet-text">Today is an amazing day.</p>
+							<!-- BLACK DIAMOND: Implement the icons for when a tweet
+							is favorited/retweeted in the upper right of the tweet. -->
+						<!-- HINT: Add to what you created in Step 5 -->
+							<p class="tweet-text">I sure could go for a taco right about now.  How's about we make a run to the border?</p>
 
-							<!-- STEP 6: The tweet actions below should only show up when you hover over the tweet. Otherwise, they should be hidden. -->
+							<!-- STEP 6: The tweet actions below should only show
+							up when you hover over the tweet. Otherwise, they
+							should be hidden. -->
 							<!-- HINT: CSS ":hover" pseudo element -->
 							<div class="tweet-actions">
 								<ul>
@@ -62,7 +76,11 @@
 								</ul>
 							</div>
 
-							<!-- STEP 7: The Retweets/timestamp/Reply areas below should also be hidden by default. These should only expand if you click on the tweet. Use a jQuery animation to accomplish the reveal, similar to how it’s done on Twitter.com -->
+							<!-- STEP 7: The Retweets/timestamp/Reply areas below
+							should also be hidden by default. These should only
+							expand if you click on the tweet. Use a jQuery animation
+							to accomplish the reveal, similar to how it’s done on
+							Twitter.com -->
 							<!-- HINT: jQuery ".on" eventHandler -->
 							<div class="stats">
 								<div class="retweets">
@@ -76,14 +94,18 @@
 								<div class="users-interact">
 									<div>
 
-										<!-- BLACK DIAMOND: Implement the Bootstrap tooltips for when you hover over a user’s avatar image -->
-										<!-- HINT: Bootstrap has good documentation =) -->
+										<!-- BLACK DIAMOND: Implement the Bootstrap
+										tooltips for when you hover over a user’s
+										avatar image -->
+										<!-- HINT: Bootstrap has good documentation-->
 										<img src="img/alagoon.jpg" />
 										<img src="img/vklimenko.jpg" />
 									</div>
 								</div>
 
-								<!-- BLACK DIAMOND: Make the timestamp below similar to how they look on Twitter (1h, 18m, 1m) and use the jQuery timeago plugin to make them automatic. -->
+								<!-- BLACK DIAMOND: Make the timestamp below similar to
+								how they look on Twitter (1h, 18m, 1m) and use the jQuery
+								timeago plugin to make them automatic. -->
 								<!-- HINT: Refer to timeago documentation -->
 								<div class="time">
 									1:04 PM - 19 Sep 13
@@ -91,7 +113,7 @@
 							</div>
 							<div class="reply">
 								<img class="avatar" src="img/alagoon.jpg" />
-								<textarea class="tweet-compose" placeholder="Reply to @mybff"/></textarea>
+								<textarea class="tweet-compose" placeholder="Reply to @chotch.McGee"/></textarea>
 							</div>
 						</div>
 					</div><!-- .tweet -->
@@ -101,7 +123,7 @@
 							<img class="avatar" src="img/funwatercat.jpg" />
 							<strong class="fullname">The Onion</strong>
 							<span class="username">@theonion</span>
-							<p class="tweet-text">“I'm able to speak confidently about a wide range of subjects, so it’s probably hard for most women to follow.” http://onion.com/1aWfKwf </p>
+							<p class="tweet-text">“I think I can probably talk about tacos all day.  Like for cereal, all day.  Ya, dig?” http://onion.com/1aWfKwf </p>
 							<div class="tweet-actions">
 								<ul>
 									<li><span class="icon action-reply"></span> Reply</li>
@@ -141,7 +163,7 @@
 							<img class="avatar" src="img/jennyshen.jpg" />
 							<strong class="fullname">Harvard Biz Review</strong>
 							<span class="username">@HarvardBiz</span>
-							<p class="tweet-text">It is possible to work with a loved one without ruining the relationship http://s.hbr.org/15FDIri </p>
+							<p class="tweet-text">Sometimes I feel like going on a murderous rampage. http://s.hbr.org/15FDIri </p>
 							<div class="tweet-actions">
 								<ul>
 									<li><span class="icon action-reply"></span> Reply</li>
@@ -178,5 +200,14 @@
 				</div><!-- #stream -->
 			</div><!-- #main -->
 		</div><!-- #page-container -->
+
+
+    <!-- Linking to Jquery  -->
+	<script src='js/jquery-2.0.3.min.js'></script>
+
+   <!-- Linking JS file -->
+   <script src='js/animations.js'></script>
+
+
 	</body>
 </html>
